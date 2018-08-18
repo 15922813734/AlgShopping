@@ -1,0 +1,36 @@
+<resources>
+    <!-- 字体大小 -->
+    <dimen name="text_less_size">8dp</dimen>
+    <dimen name="text_moresmall_size">10dp</dimen>
+    <dimen name="text_small_size">12dp</dimen>
+    <dimen name="text_midd_size">14dp</dimen>
+    <dimen name="text_moremidd_size">17dp</dimen>
+    <dimen name="text_large_size">18dp</dimen>
+    <dimen name="text_morelarge_size">20dp</dimen>
+    <dimen name="text_mostlarge_size">25dp</dimen>
+    <!-- 间距 -->
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="margin_back">12dp</dimen>
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_middle">15dp</dimen>
+    <dimen name="margin_big">20dp</dimen>
+    <dimen name="margin_smallbig">25dp</dimen>
+    <dimen name="margin_middbig">30dp</dimen>
+    <dimen name="marginlarge">50dp</dimen>
+    <dimen name="marginless">3dp</dimen>
+    <dimen name="margin_mbig">45dp</dimen>
+    <dimen name="margin_midd_small">7dp</dimen>
+    <!-- 高度 -->
+    <dimen name="half_height">0.5dp</dimen>
+    <dimen name="driver_height">1dp</dimen>
+    <dimen name="driver_two_height">2dp</dimen>
+    <dimen name="title_height">44dp</dimen>
+    <dimen name="banner_height">200dp</dimen>
+    <dimen name="img_height">250dp</dimen>
+    <dimen name="vp_item_height">120dp</dimen>
+    <dimen name="item_height">100dp</dimen>
+    <!--按钮、输入框、文本框-->
+    <dimen name="weight_height">40dp</dimen>
+    <dimen name="view_width">30dp</dimen>
+    <dimen name="tab_width">70dp</dimen>
+</resources>

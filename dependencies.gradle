@@ -1,0 +1,84 @@
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+ext {
+    // Android相关
+    compileSdkVersion = 26
+    buildToolsVersion = "26.0.2"
+    targetSdkVersion = 26
+    minSdkVersion = 16
+    versionCode = 1001
+    versionName = "1.0.0.1"
+    smartRefresh = '1.0.4'
+    butterKnifeVersion = '8.4.0'
+    xutilsversion = "3.5.0"
+    bannercode = '2.0.5'
+    glidecode = '3.7.0'
+    eventBuscode = '3.0.0'
+    gsoncode = '2.8.1'
+    pickview = '3.2.7'
+    mapbasecode = 'latest.integration'
+    wechatcode = '+'
+    supportVersion = '26.+'
+    pinyincode = '2.5.1'
+    matissecode = '0.4.3'
+    jpushcode = '3.0.9'
+    jcorecode = '1.1.7'
+    multidexcode = '1.0.0'
+    imcode = '2.8.4'
+    qiniucode = '7.2.+'
+    calendarviewcode = '3.2.0'
+    zxingcode = '2.1.0'
+    rcvhelp_sdk = 'v1.9.7'
+    swipemenulistview_code = '1.3.0'
+    upyun_sdk = '2.0.5'
+    bunglycode = 'latest.release'
+    transformations_code = '2.0.1'
+    xtablayout_code = '1.1.3'
+    versionchecklib_code = '2.0.3'
+    flow_code = '1.1.2'
+    imgscale_code = '1.3.0'
+    viewDependencies = [
+            smart_refresh_header: "com.scwang.smartrefresh:SmartRefreshHeader:${smartRefresh}",
+            smart_refresh_layout: "com.scwang.smartrefresh:SmartRefreshLayout:${smartRefresh}",
+            xutils              : "org.xutils:xutils:${xutilsversion}",
+            bannerversion       : "com.bigkoo:convenientbanner:${bannercode}",
+            butterKnife         : "com.jakewharton:butterknife:${butterKnifeVersion}",
+            compiler_butterKnife: "com.jakewharton:butterknife-compiler:${butterKnifeVersion}",
+            glide               : "com.github.bumptech.glide:glide:${glidecode}",
+            eventBus            : "org.greenrobot:eventbus:${eventBuscode}",
+            gson                : "com.google.code.gson:gson:${gsoncode}",
+            picker_view         : "com.contrarywind:Android-PickerView:${pickview}",
+            map2d_base            : "com.amap.api:map2d:${mapbasecode}",
+            map_loc             : "com.amap.api:location:${mapbasecode}",
+            wecha_sdk           : "com.tencent.mm.opensdk:wechat-sdk-android-without-mta:${wechatcode}",
+            map_search          : "com.amap.api:search:${mapbasecode}",
+            appcompat_v7        : "com.android.support:appcompat-v7:${supportVersion}",
+            design              : "com.android.support:design:${supportVersion}",
+            pinyin_sdk             : "com.belerweb:pinyin4j:${pinyincode}",
+            matisse_sdk              : "com.zhihu.android:matisse:${matissecode}",
+            jpush_sdk              : "cn.jiguang.sdk:jpush:${jpushcode}",
+            jcore_sdk              : "cn.jiguang.sdk:jcore:${jcorecode}",
+            multidex_sdk              : "com.android.support:multidex:${multidexcode}",
+            imlib_sdk              : "cn.rongcloud.android:IMLib:${imcode}",
+            imkit_sdk              : "cn.rongcloud.android:IMKit:${imcode}",
+            qiniu_sdk              : "com.qiniu:qiniu-android-sdk:${qiniucode}",
+            calendarview              : "com.haibin:calendarview:${calendarviewcode}",
+            zxing_sdk                 :"com.github.yuzhiqiang1993:zxing:${zxingcode}",
+            rcvhelp_sdk                 :"com.github.CymChad:BaseRecyclerViewAdapterHelper:${rcvhelp_sdk}",
+            swipemenulistview_sdk      :"com.baoyz.swipemenulistview:library:${swipemenulistview_code}",
+            upyun_sdk      :"com.upyun:upyun-android-sdk:${upyun_sdk}",
+            bungly_sdk             : "com.tencent.bugly:crashreport:${bunglycode}",
+            bungly_ndk             : "com.tencent.bugly:nativecrashreport:${bunglycode}",
+            transformations_sdk    : "jp.wasabeef:glide-transformations:${transformations_code}",
+            xtablayout_sdk         : "com.androidkun:XTabLayout:${xtablayout_code}",
+            versionchecklib_sdk    : "com.allenliu.versionchecklib:library:${versionchecklib_code}",
+            mtj_sdk    : "com.baidu.mobstat:mtj-sdk:${mapbasecode}",
+            flow_sdk    : "com.hyman:flowlayout-lib:${flow_code}",
+            imgscale_sdk    : "com.github.chrisbanes:PhotoView:${imgscale_code}",
+    ]
+}

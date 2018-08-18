@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+//    signingConfigs {
+//        config {
+//            keyAlias 'android'
+//            keyPassword '123456'
+//            storeFile file('C:/Users/XB/Desktop/key/xbsc.jks')
+//            storePassword '123456'
+//        }
+//    }
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+    compileSdkVersion globalConfiguration.compileSdkVersion
+    defaultConfig {
+        applicationId "com.tg.shopping"
+        minSdkVersion globalConfiguration.minSdkVersion
+        targetSdkVersion globalConfiguration.targetSdkVersion
+        versionCode globalConfiguration.versionCode
+        versionName globalConfiguration.versionName
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "arm64-v8a", "x86_64"
+        }
+    }
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.config
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.config
+        }
+    }
+    sourceSets { main { res.srcDirs = ['src/main/res', 'src/main/res/color'] } }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    def viewDependencies = rootProject.ext.viewDependencies
+    annotationProcessor viewDependencies.compiler_butterKnife
+    implementation viewDependencies.design
+    implementation viewDependencies.multidex_sdk
+    implementation viewDependencies.smart_refresh_layout
+    implementation viewDependencies.xutils
+    implementation viewDependencies.bannerversion
+    implementation viewDependencies.glide
+    implementation viewDependencies.eventBus
+    implementation viewDependencies.gson
+    implementation viewDependencies.picker_view
+    implementation viewDependencies.matisse_sdk
+    implementation viewDependencies.butterKnife
+    implementation viewDependencies.calendarview
+    implementation viewDependencies.zxing_sdk
+    implementation viewDependencies.rcvhelp_sdk
+    implementation viewDependencies.swipemenulistview_sdk
+    implementation viewDependencies.transformations_sdk
+    implementation viewDependencies.xtablayout_sdk
+    implementation viewDependencies.versionchecklib_sdk
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/head_radiu_write"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/text_large_size"
+        android:layout_height="@dimen/weight_height"
+        android:gravity="center"
+        android:singleLine="true" />
+    <View
+        android:id="@+id/tv_title_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/half_height"
+        android:background="@color/bg_color" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:textSize="@dimen/text_moremidd_size"
+        android:textColor="@color/color_black"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:minHeight="@dimen/item_height"
+        android:gravity="center"
+        android:scrollbars="vertical" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/half_height"
+        android:background="@color/bg_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/weight_height"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/shallowcenter_color"
+            android:textSize="@dimen/text_moremidd_size" />
+        <View
+            android:id="@+id/v_ve_line"
+            android:layout_width="@dimen/half_height"
+            android:layout_height="match_parent"
+            android:background="@color/bg_color" />
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/shallowcenter_color"
+            android:gravity="center"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/text_moremidd_size" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorgray">#666666</color>
+    <color name="color_light_gray">#999999</color>
+    <color name="colorwhite">#FFFFFF</color>
+    <color name="transelate">#00000000</color>
+    <color name="helf_transelate">#50000000</color>
+    <color name="et_gray">#EEEEEE</color>
+    <color name="color_black">#222222</color>
+    <color name="color_red">#FF554F</color>
+    <color name="color_red_one">#F94539</color>
+    <color name="line_color_three">#E9E9E9</color>
+    <color name="line_color">#F6F6F6</color>
+    <color name="line_color_two">#F9F9F9</color>
+    <color name="tab_color">#FEFEFE</color>
+    <color name="bg_color">#f1f1f1</color>
+    <color name="shallow_color">#FF554F</color>
+    <color name="shallowcenter_color">#FE7449</color>
+    <color name="shallowend_color">#FD8E44</color>
+    <color name="text_color">#21f4b1</color>
+
+    <color name="shallowend_color_two">#FE7449</color>//Tab指示器颜色
+    <color name="shallowend_color_three">#FE7449</color>//版本更新标题栏颜色
+    <color name="dark_gray_color">#626262</color>
+</resources>
